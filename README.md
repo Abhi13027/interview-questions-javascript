@@ -10,7 +10,7 @@
 
 <br/>
 
-1. ## What is Context in Javascript?
+## 1. What is Context in Javascript?
 
 Context is nothing but the value of `this` keyword in javascript. The `this` keyword basically refers to the object that the function is executing in.
 
@@ -18,7 +18,7 @@ Context is nothing but the value of `this` keyword in javascript. The `this` key
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-2. ## What are Constructors in Javascript?
+## 2. What are Constructors in Javascript?
 
 Constructors in Javascript are functions which are used to initialize a set of values or set default values for the objects.
 
@@ -36,7 +36,7 @@ var myself = new Person("Abhishek", 25, "abc@gmail.com");
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-3. ## What is Call Apply and Bind?
+## 3. What is Call Apply and Bind?
 
 The Call, Apply and Bind methods are generally used to set the value of `this` keyword irrespective of the way in which a function is called.
 
