@@ -6,7 +6,7 @@
 | ----- | ------------------------------------------------------------------------------ |
 | 01.   | [What is Context in Javascript](#what-is-context-in-javascipt)               |
 | 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript) |
-| 03.   | [What is Call, Apply and Bind?](#what-is-call,-apply-and-bind)               |
+| 03.   | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                 |
 
 <br/>
 
@@ -36,7 +36,7 @@ var myself = new Person("Abhishek", 25, "abc@gmail.com");
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-3. ## What is Call, Apply and Bind?
+3. ## What is Call Apply and Bind?
 
 The Call, Apply and Bind methods are generally used to set the value of `this` keyword irrespective of the way in which a function is called.
 
