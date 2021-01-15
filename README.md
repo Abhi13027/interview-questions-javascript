@@ -4,9 +4,9 @@
 
 | Sl.No | Questions                                                                      |
 | ----- | ------------------------------------------------------------------------------ |
-| 01.   | [What is Context in Javascript](#q-what-is-context-in-javascipt)               |
-| 02.   | [What are Constructors in Javascript?](#q-what-are-constructors-in-javascript) |
-| 03.   | [What is Call, Apply and Bind?](#q-what-is-call,-apply-and-bind)               |
+| 01.   | [What is Context in Javascript](#what-is-context-in-javascipt)               |
+| 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript) |
+| 03.   | [What is Call, Apply and Bind?](#what-is-call,-apply-and-bind)               |
 
 <br/>
 
