@@ -255,7 +255,6 @@ The Execution context is divided into the following two
 <li>Global Execution Context</li>
 <li>Functional Execution Context</li>
 </ul>
-<br/>
 
 `Global Execution Context`<br/>
 Whenever your code runs for the very first time, it gets attached to the Global Context. There can only be <i>one</i> Global Execution Context in the entire process.
