@@ -54,6 +54,37 @@ var myself = new Person("Abhishek", 25, "abc@gmail.com");
 
 The Call, Apply and Bind methods are generally used to set the value of `this` keyword irrespective of the way in which a function is called.
 
+`Call()`<br/>
+The call method executes the function with a given <i>this</i> value with arguments provided individually.
+
+```js
+var obj1 = {
+  num: 3,
+};
+
+var addTo = function (a, b, c) {
+  return this.num + a + b + c;
+};
+
+console.log(addTo.call(obj1, a, b, c));
+```
+
+`Apply()`<br/>
+The apply method is exactly the same as the call method in functionality. The only difference is that the arguments are provided in an array.
+
+```js
+var obj2 = {
+  num: 3,
+};
+var addTo = function (a, b, c) {
+  return this.num + a + b + c;
+};
+
+var arr = [8, 8, 9];
+
+console.log(addTo.apply(obj2, arr));
+```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
