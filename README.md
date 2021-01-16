@@ -10,6 +10,7 @@
 | 04.   | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout)                               |
 | 05.   | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)                                   |
 | 06.   | [What is the difference between Proto and Prototype?](#what-is-the-difference-between-proto-and-prototype) |
+| 07.   | [What is Prototype Inheritance Chain?](#what-is-prototype-inheritance-chain)                               |
 
 <br/>
 
@@ -166,6 +167,30 @@ arr.__proto__;
 Array.prototype;
 //[constructor: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, find: ƒ, …]
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+7. ### What is Prototype Inheritance Chain?
+
+Every object in Javascript eventually inherits the properties and methods from `Object.prototype`. This is called the Prototype chain.
+This is the reason why we say that almost everything in Javascript is an object.
+
+```js
+var arr = ["Abhishek", "Aman"];
+
+arr.__proto__;
+//[constructor: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, find: ƒ, …]
+
+arr.__proto__.__proto__;
+//{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+
+arr.__proto__.__proto__.__proto__;
+//null
+```
+
+In the above example we could see that the `arr` inherits its properties and methods from `Array` Constructor which in turn inherits its properties and methods from the `Object` Constructor which is then pointing to null. This is nothing but the Prototype Chain.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
