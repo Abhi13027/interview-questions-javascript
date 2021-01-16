@@ -7,6 +7,7 @@
 | 01.   | [What is Context in Javascript?](#what-is-context-in-javascript)             |
 | 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript) |
 | 03.   | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                 |
+| 04.   | [What is SetTimeout?](#what-is-settimeout)                                   |
 
 <br/>
 
@@ -101,6 +102,22 @@ var newFunc = addTo.bind(obj3);
 
 console.log(newFunc(8, 8, 9));
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+4. ### What is SetTimeout?
+
+The SetTimeout function calls the function or evaluates the function after a specified number of milliseconds.
+
+```js
+setTimeout(function () {
+  console.log("Hello World!");
+}, 2000);
+```
+
+`Hello World!` will get printed after 2 seconds (2000 milliseconds).
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
