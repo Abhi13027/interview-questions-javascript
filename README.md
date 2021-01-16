@@ -11,6 +11,7 @@
 | 05.   | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)                                   |
 | 06.   | [What is the difference between Proto and Prototype?](#what-is-the-difference-between-proto-and-prototype) |
 | 07.   | [What is Prototype Inheritance Chain?](#what-is-prototype-inheritance-chain)                               |
+| 08.   | [What is Synchronous and Asynchronous Code?](#what-is-synchronous-and-asynchronous-code)                   |
 
 <br/>
 
@@ -191,6 +192,44 @@ arr.__proto__.__proto__.__proto__;
 ```
 
 In the above example we could see that the `arr` inherits its properties and methods from `Array` Constructor which in turn inherits its properties and methods from the `Object` Constructor which is then pointing to null. This is nothing but the Prototype Chain.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+8. ### What is Synchronous and Asynchronous Code?
+
+A `synchronous` code is a code in which the statements of the code are executed in sequence. Each statement waits for the previous statement to finish before executing.
+
+An `asynchronous` code is the one in which the next statement doesn't wait for the previous statement to finish executing.
+
+`Synchronous`
+
+```js
+var a = 10;
+function func() {
+  console.log(a);
+}
+func();
+```
+
+<br/>
+
+`Asynchronous`
+
+```js
+console.log("start");
+
+setTimeout(function () {
+  console.log("The wait time is 2 seconds");
+}, 1000);
+
+console.log("end");
+
+// start
+// end
+// The wait time is 2 seconds
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
