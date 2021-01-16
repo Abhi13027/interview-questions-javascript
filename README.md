@@ -12,6 +12,7 @@
 | 06.   | [What is the difference between Proto and Prototype?](#what-is-the-difference-between-proto-and-prototype) |
 | 07.   | [What is Prototype Inheritance Chain?](#what-is-prototype-inheritance-chain)                               |
 | 08.   | [What is Synchronous and Asynchronous Code?](#what-is-synchronous-and-asynchronous-code)                   |
+| 09.   | [What is an Event Loop?](#what-is-an-event-loop)                                                           |
 
 <br/>
 
@@ -230,6 +231,14 @@ console.log("end");
 // end
 // The wait time is 2 seconds
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+9. ### What is an Event Loop?
+
+The `event loop` is the secret behind the Javascript asynchronous behaviour. The event loop is like an endless loop which keeps on checking whether there is something to be executed in the `call stack`. If the call stack is found to be empty, the `event queue` is checked. If there are some methods present in the event queue, then the methods are pushed one by one to the call stack where they are executed.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
