@@ -8,6 +8,7 @@
 | 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript) |
 | 03.   | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                 |
 | 04.   | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout) |
+| 05.   | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)     |
 
 <br/>
 
@@ -132,6 +133,20 @@ clearTimeout(func);
 ```
 
 Nothing will get printed in the above case.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+5. ### What are Prototypes in Javascript?
+
+Prototypes are the mechanism through which Javascript objects inherits properties and methods from one another. Whenever a function is created in Javascript, the JS Engine adds a prototype property to the function.
+
+<ul>
+<li>Array object inherits from Array.prototype</li>
+<li> Date object inherits from Date.prototype</li>
+<li> Person object inherits from Person.prototype</li>
+</ul>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
