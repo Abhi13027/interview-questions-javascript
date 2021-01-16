@@ -7,7 +7,7 @@
 | 01.   | [What is Context in Javascript?](#what-is-context-in-javascript)             |
 | 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript) |
 | 03.   | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                 |
-| 04.   | [What is SetTimeout?](#what-is-settimeout)                                   |
+| 04.   | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout) |
 
 <br/>
 
@@ -107,8 +107,9 @@ console.log(newFunc(8, 8, 9));
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-4. ### What is SetTimeout?
+4. ### What is SetTimeout and ClearTimeout?
 
+`setTimeout()`<br/>
 The SetTimeout function calls the function or evaluates the function after a specified number of milliseconds.
 
 ```js
@@ -117,7 +118,20 @@ setTimeout(function () {
 }, 2000);
 ```
 
-`Hello World!` will get printed after 2 seconds (2000 milliseconds).
+<b>Hello World!</b> will get printed after 2 seconds (2000 milliseconds).
+
+`clearTimeout()`<br/>
+The clearTimeout function stops the execution of the function specified in the setTimeout.
+
+```js
+var func = setTimeout(function () {
+  console.log("Hello World!");
+}, 2000);
+
+clearTimeout(func);
+```
+
+Nothing will get printed in the above case.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
