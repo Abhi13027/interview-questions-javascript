@@ -4,15 +4,16 @@
 
 | Sl.No | Questions                                                                                                  |
 | ----- | ---------------------------------------------------------------------------------------------------------- |
-| 01.   | [What is Context in Javascript?](#what-is-context-in-javascript)                                           |
-| 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript)                               |
-| 03.   | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                                               |
-| 04.   | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout)                               |
-| 05.   | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)                                   |
-| 06.   | [What is the difference between Proto and Prototype?](#what-is-the-difference-between-proto-and-prototype) |
-| 07.   | [What is Prototype Inheritance Chain?](#what-is-prototype-inheritance-chain)                               |
-| 08.   | [What is Synchronous and Asynchronous Code?](#what-is-synchronous-and-asynchronous-code)                   |
-| 09.   | [What is an Event Loop?](#what-is-an-event-loop)                                                           |
+| 1.    | [What is Context in Javascript?](#what-is-context-in-javascript)                                           |
+| 2.    | [What are Constructors in Javascript?](#what-are-constructors-in-javascript)                               |
+| 3.    | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                                               |
+| 4.    | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout)                               |
+| 5.    | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)                                   |
+| 6.    | [What is the difference between Proto and Prototype?](#what-is-the-difference-between-proto-and-prototype) |
+| 7.    | [What is Prototype Inheritance Chain?](#what-is-prototype-inheritance-chain)                               |
+| 8.    | [What is Synchronous and Asynchronous Code?](#what-is-synchronous-and-asynchronous-code)                   |
+| 9.    | [What is an Event Loop?](#what-is-an-event-loop)                                                           |
+| 10.   | [What is execution context in Javascript?](#what-is-execution-context-in-javascript)                       |
 
 <br/>
 
@@ -239,6 +240,30 @@ console.log("end");
 9. ### What is an Event Loop?
 
 The `event loop` is the secret behind the Javascript asynchronous behaviour. The event loop is like an endless loop which keeps on checking whether there is something to be executed in the `call stack`. If the call stack is found to be empty, the `event queue` is checked. If there are some methods present in the event queue, then the methods are pushed one by one to the call stack where they are executed.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+10. ### What is Execution Context in Javascript?
+
+Execution context refers to the environment in which the code is executed. It is the execution context only which decides which piece of code has access to objects, functions, variables etc.
+
+The Execution context is divided into the following two
+
+<ul>
+<li>Global Execution Context</li>
+<li>Functional Execution Context</li>
+</ul>
+<br/>
+
+`Global Execution Context`<br/>
+Whenever your code runs for the very first time, it gets attached to the Global Context. There can only be <i>one</i> Global Execution Context in the entire process.
+
+`Functional Execution Context`<br/>
+Whenever the code is being executed and it encounters a function, then a functional execution context is created. There can be several functional Execution contexts depending on the number of functions.
+
+![Screenshot](images/q10_execution_context.png)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
