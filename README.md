@@ -2,18 +2,19 @@
 
 ## Table of Contents
 
-| Sl.No | Questions                                                                                                  |
-| ----- | ---------------------------------------------------------------------------------------------------------- |
-| 1.    | [What is Context in Javascript?](#what-is-context-in-javascript)                                           |
-| 2.    | [What are Constructors in Javascript?](#what-are-constructors-in-javascript)                               |
-| 3.    | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                                               |
-| 4.    | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout)                               |
-| 5.    | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)                                   |
-| 6.    | [What is the difference between Proto and Prototype?](#what-is-the-difference-between-proto-and-prototype) |
-| 7.    | [What is Prototype Inheritance Chain?](#what-is-prototype-inheritance-chain)                               |
-| 8.    | [What is Synchronous and Asynchronous Code?](#what-is-synchronous-and-asynchronous-code)                   |
-| 9.    | [What is an Event Loop?](#what-is-an-event-loop)                                                           |
-| 10.   | [What is execution context in Javascript?](#what-is-execution-context-in-javascript)                       |
+| Sl.No | Questions                                                                                                              |
+| ----- | ---------------------------------------------------------------------------------------------------------------------- |
+| 1.    | [What is Context in Javascript?](#what-is-context-in-javascript)                                                       |
+| 2.    | [What are Constructors in Javascript?](#what-are-constructors-in-javascript)                                           |
+| 3.    | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                                                           |
+| 4.    | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout)                                           |
+| 5.    | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)                                               |
+| 6.    | [What is the difference between Proto and Prototype?](#what-is-the-difference-between-proto-and-prototype)             |
+| 7.    | [What is Prototype Inheritance Chain?](#what-is-prototype-inheritance-chain)                                           |
+| 8.    | [What is Synchronous and Asynchronous Code?](#what-is-synchronous-and-asynchronous-code)                               |
+| 9.    | [What is an Event Loop?](#what-is-an-event-loop)                                                                       |
+| 10.   | [What is execution context in Javascript?](#what-is-execution-context-in-javascript)                                   |
+| 11.   | [What is Creation phase and Execution phase in Javascript?](#what-is-creation-phase-and-execution-phase-in-javascript) |
 
 <br/>
 
@@ -263,6 +264,29 @@ Whenever your code runs for the very first time, it gets attached to the Global 
 Whenever the code is being executed and it encounters a function, then a functional execution context is created. There can be several functional Execution contexts depending on the number of functions.
 
 ![Screenshot](images/q10_execution_context.png)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+11. ### What is Creation phase and Execution phase in Javascript?
+
+`Creation phase`<br/>
+In the creation phase, the compiler runs through the code twice before actually executing the code.
+
+<ol>
+<li> In the first run, the compiler picks up all the functional declarations and stores them in the memory with their references. </li>
+<li> In the second run, the compiler picks up all the variable declarations and assigns <i>undefined</i> to them.
+</ol>
+
+`Execution phase`<br/>
+In the execution phase, the following 2 things happens
+
+<ol>
+<li> The variables are assigned the values
+</li> 
+<li>The functions are executed </li>
+</ol>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
