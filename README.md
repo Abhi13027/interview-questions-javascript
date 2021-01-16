@@ -2,13 +2,11 @@
 
 ## Table of Contents
 
-| Sl.No | Questions                                                        |
-| ----- | ---------------------------------------------------------------- |
-| 01.   | [What is Context in Javascript?](#what-is-context-in-javascript) |
-
-> > > > > > > a94636f13f5134a8851ac3150c49f393361e2e9e
-> > > > > > > | 02. | [What are Constructors in Javascript?](#what-are-constructors-in-javascript) |
-> > > > > > > | 03. | [What is Call Apply and Bind?](#what-is-call-apply-and-bind) |
+| Sl.No | Questions                                                                    |
+| ----- | ---------------------------------------------------------------------------- |
+| 01.   | [What is Context in Javascript?](#what-is-context-in-javascript)             |
+| 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript) |
+| 03.   | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                 |
 
 <br/>
 
