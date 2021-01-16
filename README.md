@@ -2,13 +2,14 @@
 
 ## Table of Contents
 
-| Sl.No | Questions                                                                    |
-| ----- | ---------------------------------------------------------------------------- |
-| 01.   | [What is Context in Javascript?](#what-is-context-in-javascript)             |
-| 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript) |
-| 03.   | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                 |
-| 04.   | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout) |
-| 05.   | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)     |
+| Sl.No | Questions                                                                                                  |
+| ----- | ---------------------------------------------------------------------------------------------------------- |
+| 01.   | [What is Context in Javascript?](#what-is-context-in-javascript)                                           |
+| 02.   | [What are Constructors in Javascript?](#what-are-constructors-in-javascript)                               |
+| 03.   | [What is Call Apply and Bind?](#what-is-call-apply-and-bind)                                               |
+| 04.   | [What is SetTimeout and ClearTimeout?](#what-is-settimeout-and-cleartimeout)                               |
+| 05.   | [What are Prototypes in Javascript?](#what-are-prototypes-in-javascript)                                   |
+| 06.   | [What is the difference between Proto and Prototype?](#what-is-the-difference-between-proto-and-prototype) |
 
 <br/>
 
@@ -117,9 +118,9 @@ The SetTimeout function calls the function or evaluates the function after a spe
 setTimeout(function () {
   console.log("Hello World!");
 }, 2000);
-```
 
-<b>Hello World!</b> will get printed after 2 seconds (2000 milliseconds).
+//Hello World! will get printed after 2 seconds (2000 milliseconds).
+```
 
 `clearTimeout()`<br/>
 The clearTimeout function stops the execution of the function specified in the setTimeout.
@@ -130,9 +131,9 @@ var func = setTimeout(function () {
 }, 2000);
 
 clearTimeout(func);
-```
 
-Nothing will get printed in the above case.
+//Nothing will get printed in the above case.
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -147,6 +148,24 @@ Prototypes are the mechanism through which Javascript objects inherits propertie
 <li> Date object inherits from Date.prototype</li>
 <li> Person object inherits from Person.prototype</li>
 </ul>
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+6. ### What is the difference between Proto and Prototype?
+
+The main difference between the two is that `prototype` is a property of the constructor while `__proto__` is a property of the instance of that constructor.
+
+```js
+var arr = ["Abhishek", "Aman"];
+
+arr.__proto__;
+//[constructor: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, find: ƒ, …]
+
+Array.prototype;
+//[constructor: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, find: ƒ, …]
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
