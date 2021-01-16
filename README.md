@@ -85,6 +85,23 @@ var arr = [8, 8, 9];
 console.log(addTo.apply(obj2, arr));
 ```
 
+`Bind()`<br/>
+The bind method creates a new function that when called has it's <i>this</i> keyword set to the provided value.
+
+```js
+var obj3 = {
+  num: 3,
+};
+
+var addTo = function (a, b, c) {
+  return this.num + a + b + c;
+};
+
+var newFunc = addTo.bind(obj3);
+
+console.log(newFunc(8, 8, 9));
+```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
