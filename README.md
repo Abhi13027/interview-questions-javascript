@@ -16,6 +16,8 @@
 | 10.   | [What is execution context in Javascript?](#what-is-execution-context-in-javascript)                                   |
 | 11.   | [What is Creation phase and Execution phase in Javascript?](#what-is-creation-phase-and-execution-phase-in-javascript) |
 | 12.   | [What is Scope in Javascript?](#what-is-scope-in-javascript)                                                           |
+| 13.   | [What is Hoisting in Javascript?](#what-is-hoisting-in-javascript)                                                     |
+| 14.   | [What are Closures in Javascript?](#what-are-closures-in-javascript)                                                   |
 
 <br/>
 
@@ -360,6 +362,62 @@ function foo() {
 }
 foo();
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+13. ### What is Hoisting in Javascript?
+
+In Javascript, during the creation phase, all the functional and variable declarations are moved to the top of the scope. So if a variable is defined inside of a function, then it moves to the top of the functional/local scope whereas when the variable is defined globally, it moves to the top of the global scope.
+
+`Example-1`
+
+```js
+console.log(x); // undefined
+var x = 10;
+```
+
+In the above example, the variable x is hoisted to the top of the global scope and hence is assigned a value of undefined because the console.log statement is before the assignment to value 10 in the code.
+
+`Example-2`
+
+```js
+func();
+var x = 10;
+function func() {
+  var y = 20;
+  console.log(x); // undefined
+  console.log(y); // 20
+}
+```
+
+In this particular example, there are 2 things happening, first the function `func` and the variables `x` and `y` are hoisted to the top of their scope ( x to the global and y to the local). After that, when the function func is being called, it has access to the function now, hence it executes the function, but till then x is not assigned a value of 10, so it gets printed to be undefined while y being on top of local scope gets printed to be 20.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+14. ### What are Closures in Javascript?
+
+Closure is the property through which the inner functions have access to the outer function variables and arguments even when the outer function has returned.
+
+```js
+function outer() {
+  var count = 1;
+  return function () {
+    console.log(count);
+    count++;
+  };
+}
+
+var temp = outer();
+temp(); // 1
+temp(); // 2
+temp(); // 3
+```
+
+`Note:` if you want to check the closure property, copy-paste the entire code in the browser's console and then do `console.dir(temp)`. Expand the function anonymous and then expand `Scopes`, you will be able to see the closure property over there which will have the count object.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
