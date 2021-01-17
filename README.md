@@ -15,6 +15,7 @@
 | 9.    | [What is an Event Loop?](#what-is-an-event-loop)                                                                       |
 | 10.   | [What is execution context in Javascript?](#what-is-execution-context-in-javascript)                                   |
 | 11.   | [What is Creation phase and Execution phase in Javascript?](#what-is-creation-phase-and-execution-phase-in-javascript) |
+| 12.   | [What is Scope in Javascript?](#what-is-scope-in-javascript)                                                           |
 
 <br/>
 
@@ -287,6 +288,78 @@ In the execution phase, the following 2 things happens
 </li> 
 <li>The functions are executed </li>
 </ol>
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+12. ### What is Scope in Javascript?
+
+Scope determines the place where the variables, functions or objects can be accessed.
+
+There are 2 types of Scope
+
+<ol>
+<li> Global Scope </li>
+<li> Local Scope </li>
+</ol>
+
+### `1. Global Scope`<br/>
+
+The area outside all the functions is considered to be the global scope. The variables defined in the global scope can be accessed and altered in any other scopes. There is ony <i>one</i> global scope.
+
+```js
+var pi = 3.14;
+console.log(pi); // 3.14
+
+function getPi() {
+  console.log(pi);
+}
+
+getPi(); // 3.14
+```
+
+### `2. Local Scope`<br/>
+
+Variables that are declared inside the functions become local to the function and are thus accessible only inside their local scope. Every function has its own local Scope.
+
+Local Scope further can be divided into 2
+
+<ul>
+<li>Functional scope</li>
+<li>Block Scope</li>
+</ul>
+
+`Functional Scope`<br/>
+Whenever you declare a variable inside of a function, the variable is accessible within the function only. You cannot access the variable outside of the function. `var` is the keyword used to define the variable with functional scope.
+
+```js
+function func() {
+  var x = 10;
+  console.log(x);
+}
+
+console.log(x); // ReferenceError: x is not defined
+func(); // 10
+```
+
+`Block Scope`</br>
+A block scope is the area which is enclosed by the `{}` brackets. The statements such as if, switch, for, while etc. generally start with the curly brackets, and hence constitute a block. In ES6, the introduction of `let` and `const`
+was done which is used to define a block. The variables are thus not accessible outside of the block.
+
+```js
+function foo() {
+  if (true) {
+    var x = 11;
+    let y = 12;
+    console.log(x); // 11
+    console.log(y); // 12
+  }
+  console.log(x); // 11
+  console.log(y); // ReferenceError: y is not defined
+}
+foo();
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
