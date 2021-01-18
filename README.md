@@ -19,6 +19,8 @@
 | 13.   | [What is Hoisting in Javascript?](#what-is-hoisting-in-javascript)                                                     |
 | 14.   | [What are Closures in Javascript?](#what-are-closures-in-javascript)                                                   |
 | 15.   | [What is Currying in Javascript?](#what-is-currying-in-javascript)                                                     |
+| 16.   | [What is Strict Mode in Javascript?](#what-is-strict-mode-in-Javascript)                                               |
+| 17.   | [What is Scope Chain?](#what-is-scope-chain)                                                                           |
 
 <br/>
 
@@ -456,4 +458,45 @@ mult(1)(2)(3)(4); // 24;
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
+</div>
+
+16. ### What is Strict Mode in Javascript?
+
+Strict mode eliminates some JavaScript silent errors by changing them to throw errors. It allows us to write secure Javascript. The `"use strict"` directive is delcared at the top of the code to invoke the strict mode
+
+```js
+"use strict";
+
+x = 10;
+console.log(x); // ReferenceError: x is not defined
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+16. ### What is Scope Chain?
+
+Whenever a variable is used in Javascript, the JS engine tries to find the value of the variable in the current scope. If it is not able to find the variable, it will look into the outer scope and will continue the process of finding it until it finds the variable or reaches the global scope.
+
+If the variable is still not present, then the JS Engine will implicitly declare the variable in the global scope if the code is not running in `strict mode`, else it will throw an error.
+
+```js
+x = 10;
+console.log(x); // 10
+```
+
+In the this example, in the second line, the JS engine will look for the variable x, it will go in the upper direction and will find it in the 1st line of code, but there is no declaration, since the code is running in non strict mode, the variable x will be declared as global varibale implicitly and hence the value of x will be accessible.
+
+```js
+console.log(x); // ReferenceError: x is not defined
+x = 10;
+```
+
+In this particular example, in the 1st line the Javascript Engine will look for the variable x, and will go in the upper direction to look for the variable x and would not find it. Hence it will throw a `ReferenceError`
+
+<div align="right">
+  <b>
+    <a href="#">↥ back to top</a>
+  </b>
 </div>
