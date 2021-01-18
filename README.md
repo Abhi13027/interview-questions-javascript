@@ -18,6 +18,7 @@
 | 12.   | [What is Scope in Javascript?](#what-is-scope-in-javascript)                                                           |
 | 13.   | [What is Hoisting in Javascript?](#what-is-hoisting-in-javascript)                                                     |
 | 14.   | [What are Closures in Javascript?](#what-are-closures-in-javascript)                                                   |
+| 15.   | [What is Currying in Javascript?](#what-is-currying-in-javascript)                                                     |
 
 <br/>
 
@@ -418,6 +419,40 @@ temp(); // 3
 ```
 
 `Note:` if you want to check the closure property, copy-paste the entire code in the browser's console and then do `console.dir(temp)`. Expand the function anonymous and then expand `Scopes`, you will be able to see the closure property over there which will have the count object.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+15. ### What is Currying in Javascript?
+
+Currying is the technique through which functions with multiple arguments are transformed into a series of nested functions with less number of arguments. It is very useful in `event handling`
+
+`Without Currying`
+
+```js
+function mult(a, b, c, d) {
+  return a * b * c * d;
+}
+
+mult(1, 2, 3, 4); // 24
+```
+
+`With Currying`
+
+```js
+function mult(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a * b * c * d;
+      };
+    };
+  };
+}
+
+mult(1)(2)(3)(4); // 24;
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
