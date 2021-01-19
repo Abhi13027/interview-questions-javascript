@@ -21,6 +21,8 @@
 | 15.   | [What is Currying in Javascript?](#what-is-currying-in-javascript)                                                     |
 | 16.   | [What is Strict Mode in Javascript?](#what-is-strict-mode-in-Javascript)                                               |
 | 17.   | [What is Scope Chain?](#what-is-scope-chain)                                                                           |
+| 18.   | [What is a Callback Function?](#what-is-a-callback-function)                                                           |
+| 19.   | [What is a Callback Hell?](#what-is-a-callback-hell)                                                                   |
 
 <br/>
 
@@ -475,7 +477,7 @@ console.log(x); // ReferenceError: x is not defined
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-16. ### What is Scope Chain?
+17. ### What is Scope Chain?
 
 Whenever a variable is used in Javascript, the JS engine tries to find the value of the variable in the current scope. If it is not able to find the variable, it will look into the outer scope and will continue the process of finding it until it finds the variable or reaches the global scope.
 
@@ -494,6 +496,39 @@ x = 10;
 ```
 
 In this particular example, in the 1st line the Javascript Engine will look for the variable x, and will go in the upper direction to look for the variable x and would not find it. Hence it will throw a `ReferenceError`
+
+<div align="right">
+  <b>
+    <a href="#">↥ back to top</a>
+  </b>
+</div>
+
+18. ### What is a Callback Function?
+
+A callback function is a function which is passed as an argument to another function which can be called back later sometime. The callback functions are generally used in `asynchronous` programming where one function has to wait for the other function to finish.
+
+```js
+function greet(name, cb) {
+  console.log(`Hello ${name}`);
+  cb();
+}
+
+function cb() {
+  console.log("Callback Function");
+}
+
+greet("Abhishek", cb);
+```
+
+<div align="right">
+  <b>
+    <a href="#">↥ back to top</a>
+  </b>
+</div>
+
+19. ### What is a Callback Hell?
+
+A callback hell also known as the pyramid of doom is an anti-pattern which is seen while we deal with asynchronous programming. It leads to the situation where we have a series of nested callback functions.
 
 <div align="right">
   <b>
