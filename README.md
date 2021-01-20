@@ -530,6 +530,24 @@ greet("Abhishek", cb);
 
 A callback hell also known as the pyramid of doom is an anti-pattern which is seen while we deal with asynchronous programming. It leads to the situation where we have a series of nested callback functions.
 
+```js
+func1(param, function () {
+  func2(param, function () {
+    func3(param, function () {
+      func4(param, function () {
+        func5(param, function () {
+          func6(param, function () {
+            func7(param, function () {
+              console.log("I am doomed");
+            });
+          });
+        });
+      });
+    });
+  });
+});
+```
+
 <div align="right">
   <b>
     <a href="#">↥ back to top</a>
