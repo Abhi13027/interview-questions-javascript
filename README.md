@@ -374,7 +374,7 @@ foo();
 
 13. ### What is Hoisting in Javascript?
 
-In Javascript, during the creation phase, all the functional and variable declarations are moved to the top of the scope. So if a variable is defined inside of a function, then it moves to the top of the functional/local scope whereas when the variable is defined globally, it moves to the top of the global scope.
+In Javascript, during the creation phase, all the functions and variable declarations are moved to the top of the scope. So if a variable is defined inside of a function, then it moves to the top of the functional/local scope whereas when the variable is defined globally, it moves to the top of the global scope.
 
 `Example-1`
 
