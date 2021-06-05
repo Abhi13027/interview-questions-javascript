@@ -505,7 +505,7 @@ In this particular example, in the 1st line the Javascript Engine will look for 
 
 18. ### What is a Callback Function?
 
-A callback function is a function which is passed as an argument to another function which can be called back later sometime. The callback functions are generally used in `asynchronous` programming where one function has to wait for the other function to finish.
+A callback function is a function which is passed as an argument to another function which can be called back later sometime. The callback functions are generally used in `asynchronous` programming where one we need to do continue code execution. 
 
 ```js
 function greet(name, cb) {
