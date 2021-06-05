@@ -82,7 +82,7 @@ var addTo = function (a, b, c) {
   return this.num + a + b + c;
 };
 
-console.log(addTo.call(obj1, a, b, c));
+console.log(addTo.call(obj1, 8, 8, 9));
 ```
 
 `Apply()`<br/>
