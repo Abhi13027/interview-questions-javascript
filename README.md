@@ -248,7 +248,7 @@ console.log("end");
 
 9. ### What is an Event Loop?
 
-The `event loop` is the secret behind the Javascript asynchronous behaviour. The event loop is like an endless loop which keeps on checking whether there is something to be executed in the `call stack`. If the call stack is found to be empty, the `event queue` is checked. If there are some methods present in the event queue, then the methods are pushed one by one to the call stack where they are executed.
+The `event loop` is the secret behind the Javascript asynchronous behaviour. The event loop is like an endless loop which keeps on checking whether there is something to be executed in the `call stack`. If the call stack is found to be empty, the `event queue` is checked. If there are some statements present in the event queue, then those statements are pushed one by one to the call stack where they are executed.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
